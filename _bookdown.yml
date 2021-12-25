@@ -1,0 +1,14 @@
+output_dir: "docs"
+rmd_files:
+  - "index.Rmd"
+  - "education.Rmd"
+  - "publication.Rmd"
+  - "courses.Rmd"
+  - "scholarship.Rmd"
+  - "bookchapter.Rmd"
+  - "presentation.Rmd"
+  - "ext.Rmd"
+  - "notes.Rmd"
+
+book_filename: "tcs_CV"
+delete_merged_file: true

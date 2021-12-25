@@ -1,0 +1,7 @@
+\faIcon{newspaper} Publications
+==================================
+
+```{r}
+# Some doi values have special charcters that break the regex-need to be removed
+publications %>% mutate(doi_clean=str_replace_all(url.value, "[^[:alnum:]]", "")) %>% regex_left_join(selected_pub %>% mutate(DOI=str_replace_all(DOI, "[^[:alnum:]]", "")), by =c("doi_clean"="DOI"),ignore_case=T) %>% mutate(order=if_else(is.na(order),max(order,na.rm=T)+1,order)) %>% arrange(order,desc(`publication-date.year.value`))%>% detailed_entries(with=`title.title.value`, where = `journal-title.value`, when = `publication-date.year.value`, why=`url.value`)
+```

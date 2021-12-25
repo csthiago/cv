@@ -1,0 +1,12 @@
+\faIcon{money-check-alt} Scholarships
+==================================
+
+
+```{r scholarship}
+
+detailed_entries(scholarship, 
+                 when = glue("{startYear}--{endYear}"),
+                 where = funder,
+                 with = project)
+
+```

@@ -1,0 +1,12 @@
+\faIcon{hands-helping} University Extension
+==================================
+
+
+
+```{r ext}
+detailed_entries(ext, 
+                 when = glue("{startYear}/{endYear}"),
+                 what = what,
+                 why = detail)
+```
+

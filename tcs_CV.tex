@@ -1,0 +1,263 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Thiago}{Cerqueira-Silva}
+
+\position{M.D./Ph.D.~Student}
+\address{Av. Reitor Miguel Calmon, S/N - Vale do Canela, Salvador-Bahia}
+
+\mobile{+55 71-99124-7896}
+\email{\href{mailto:csilvathiago@hotmail.com}{\nolinkurl{csilvathiago@hotmail.com}}}
+\orcid{0000-0003-4534-2509}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{I am an M.D./Ph.D.~student, with experience in bioinformatics,
+biostatistics, and epidemiology. My primary research interests are study
+design and data analysis.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\thepage}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {December 24, 2021}
+    {Thiago Cerqueira-Silva~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{\texorpdfstring{\faIcon{university}
+Education}{ Education}}\label{education}}
+
+\begin{cventries}
+    \cventry{M.D./Ph.D.}{Universidade Federal da Bahia}{Faculdade de Medicina da Bahia}{2014--2022}{\begin{cvitems}
+\item MD Thesis: Influence of obstructive sleep apnea on cerebral vasorreactivity indices in patients with cerebral vascular accident
+\item PhD Thesis: Risk factors and pathogenesis of chronic Chikungunya disease
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{\texorpdfstring{\faIcon{newspaper}
+Publications}{ Publications}}\label{publications}}
+
+\begin{cventries}
+    \cventry{}{Two-dose ChAdOx1 nCoV-19 vaccine protection against COVID-19 hospital admissions and deaths over time: a retrospective, population-based cohort study in Scotland and Brazil}{The Lancet}{2021}{\begin{cvitems}
+\item http://dx.doi.org/10.1016/s0140-6736(21)02754-9
+\end{cvitems}}
+    \cventry{}{Influence of age on the effectiveness and duration of protection of Vaxzevria and CoronaVac vaccines: A population-based study}{The Lancet Regional Health - Americas}{2022}{\begin{cvitems}
+\item http://dx.doi.org/10.1016/j.lana.2021.100154
+\end{cvitems}}
+    \cventry{}{A clinical scoring system to predict long-term arthralgia in Chikungunya disease: A cohort study}{PLOS Neglected Tropical Diseases}{2020}{\begin{cvitems}
+\item https://doi.org/10.1371/journal.pntd.0008467
+\end{cvitems}}
+    \cventry{}{Association Between Risk of Obstructive Sleep Apnea and Cerebrovascular Reactivity in Stroke Patients}{Journal of the American Heart Association}{2020}{\begin{cvitems}
+\item http://dx.doi.org/10.1161/jaha.119.015313
+\end{cvitems}}
+    \cventry{}{LTB4-Driven Inflammation and Increased Expression of ALOX5/ACE2 During Severe COVID-19 in Individuals With Diabetes}{Diabetes}{2021}{\begin{cvitems}
+\item http://dx.doi.org/10.2337/db20-1260
+\end{cvitems}}
+    \cventry{}{Tissue Inhibitor of Metalloproteinase-1 Is Increased in Chagasic Cardiomyopathy}{The American Journal of Tropical Medicine and Hygiene}{2021}{\begin{cvitems}
+\item http://dx.doi.org/10.4269/ajtmh.20-0401
+\end{cvitems}}
+    \cventry{}{Efficacy of Brazilian green propolis (EPP-AF®) as an adjunct treatment for hospitalized COVID-19 patients: A randomized, controlled clinical trial}{Biomedicine \& Pharmacotherapy}{2021}{\begin{cvitems}
+\item http://dx.doi.org/10.1016/j.biopha.2021.111526
+\end{cvitems}}
+    \cventry{}{Chagas disease is an independent predictor of stroke and death in a cohort of heart failure patients}{International Journal of Stroke}{2021}{\begin{cvitems}
+\item http://dx.doi.org/10.1177/17474930211006284
+\end{cvitems}}
+    \cventry{}{Bridging Learning in Medicine and Citizenship During the COVID-19 Pandemic: A Telehealth-Based Case Study}{JMIR Public Health and Surveillance}{2021}{\begin{cvitems}
+\item https://doi.org/10.2196/24795
+\end{cvitems}}
+    \cventry{}{Burnout syndrome and resilience in medical students from a Brazilian public college in Salvador, Brazil}{Trends in Psychiatry and Psychotherapy}{2021}{\begin{cvitems}
+\item https://doi.org/10.47626/2237-6089-2020-0187
+\end{cvitems}}
+    \cventry{}{Oral lesions are frequent in patients with Chikungunya infection}{Journal of Travel Medicine}{2020}{\begin{cvitems}
+\item http://dx.doi.org/10.1093/jtm/taaa040
+\end{cvitems}}
+    \cventry{}{Factors associated with abnormal cardiac magnetic resonance imaging in embolic stroke of undetermined source}{International Journal of Stroke}{2019}{\begin{cvitems}
+\item http://dx.doi.org/10.1177/1747493019840928
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{courses}{%
+\section{\texorpdfstring{\faIcon{laptop-code}
+Courses}{ Courses}}\label{courses}}
+
+\begin{cventries}
+    \cventry{}{III Curso de Verão em Bioinformática da UFMG}{Federal University of Minas Gerais}{2019}{}\vspace{-4.0mm}
+    \cventry{}{II International Course on Bioinformatics Analysis of RNA-Seq Data}{Fundação Oswaldo Cruz - Instituto Carlos Chagas}{2019}{}\vspace{-4.0mm}
+    \cventry{}{XVII Curso Internacional de Epidemiologia Molecular em Doenças Infecciosas}{Instituto Gonçalo Moniz - Fiocruz Bahia}{2017}{}\vspace{-4.0mm}
+    \cventry{}{STATSX0001: Statistical Learning}{StanfordOnline}{2021}{}\vspace{-4.0mm}
+    \cventry{}{Reproducible Research}{Universidade Johns Hopkins-Coursera}{2020}{}\vspace{-4.0mm}
+    \cventry{}{Statistical Analysis with R for Public Health - Specialization}{Imperial College London-Coursera}{2020}{}\vspace{-4.0mm}
+    \cventry{}{PH125.8x: Data Science: Machine Learning}{HarvardX}{2020}{}\vspace{-4.0mm}
+    \cventry{}{Epidemiology for Public Health  - Specialization}{Imperial College London-Coursera}{2020}{}\vspace{-4.0mm}
+    \cventry{}{Academic Literacy}{Moscow Institute of Physics and Technology-Coursera}{2019}{}\vspace{-4.0mm}
+    \cventry{}{R Programming}{Universidade Johns Hopkins-Coursera}{2018}{}\vspace{-4.0mm}
+    \cventry{}{PH525.1x: Statistics and R}{HarvardX}{2018}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{scholarships}{%
+\section{\texorpdfstring{\faIcon{money-check-alt}
+Scholarships}{ Scholarships}}\label{scholarships}}
+
+\begin{cventries}
+    \cventry{}{Monitoramento e avaliação das ações estratégicas dos programas de provimento e formação em saúde do ministério da saúde.}{Fiotec}{2020--2021}{}\vspace{-4.0mm}
+    \cventry{}{Expressão gênica nas lesões de leishmaniose cutânea e suas variantes clínicas através de técnicas de alto rendimento}{Fiotec}{2019--2020}{}\vspace{-4.0mm}
+    \cventry{}{Avaliação de função auditiva e de oromotricidade em bebês com microcefalia e infecção congênita por Zika vírus}{CNPQ}{2018--2019}{}\vspace{-4.0mm}
+    \cventry{}{CHADSS: Chagas Disease Scan Study Neuroimagem na Doença de Chagas}{NIH}{2016--2017}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{book-chapters}{%
+\section{\texorpdfstring{\faIcon{book} Book
+Chapters}{ Book Chapters}}\label{book-chapters}}
+
+\begin{cventries}
+    \cventry{Construção de conhecimento no curso da pandemia de COVID-19: aspectos biomédicos, clínico-assistenciais, epidemiológicos e sociais}{Vacinas contra a infecção pelo SARS-CoV-2}{}{2020}{}\vspace{-4.0mm}
+    \cventry{Construção de conhecimento no curso da pandemia de COVID-19: aspectos biomédicos, clínico-assistenciais, epidemiológicos e sociais}{Testes diagnósticos na COVID-19}{}{2020}{}\vspace{-4.0mm}
+    \cventry{Construção de conhecimento no curso da pandemia de COVID-19: aspectos biomédicos, clínico-assistenciais, epidemiológicos e sociais}{Aprendizado em medicina e cidadania durante a pandemia de COVID-19: um modelo de teletriagem em saúde}{}{2020}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{works-presented-in-congress}{%
+\section{\texorpdfstring{\faIcon{comments} Works presented in
+Congress}{ Works presented in Congress}}\label{works-presented-in-congress}}
+
+\begin{cvhonors}
+    \cvhonor{}{Influence of risk of obstructive sleep apnea on cerebral vasoreactivity in patients with stroke}{5th European Stroke Organisation Conference}{2019}
+    \cvhonor{}{Coorte de 13 anos de pacientes com insuficiência cardíaca chagásica e não-chagásica: fatores de risco para AVC e morte}{XII Congresso Brasileiro de Doenças Cerebrovasculares}{2019}
+    \cvhonor{}{Neuronal depopulation, not silent cerebrovascular disease mediate cognitive dysfunction in Chagas disease}{11th World Stroke Congress}{2018}
+    \cvhonor{}{Pilot study of cardiac magnetic resonance imaging in embolic stroke of undetermined source (MR-ESUS)}{3rd European Stroke Organisation Conference}{2017}
+\end{cvhonors}
+
+\hypertarget{university-extension}{%
+\section{\texorpdfstring{\faIcon{hands-helping} University
+Extension}{ University Extension}}\label{university-extension}}
+
+\begin{cventries}
+    \cventry{Telecoronavirus: Ação das Escolas e Entidades Médicas da Bahia.}{}{}{March-2020-/July-2020}{\begin{cvitems}
+\item I helped in the coordination of this project that focused on mitigating the adverse effects of the COVID-19 pandemic through a strategy that combines telehealth and medical training
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{notes}{%
+\section{Notes}\label{notes}}
+
+\begin{itemize}
+\tightlist
+\item
+  For more detailed curriculum vitae, please visit my
+  \href{http://lattes.cnpq.br/8074214277248039}{Lattes}
+\item
+  This CV is reproducible; all the source code behind this CV is
+  available on \href{https://github.com/csthiago/cv}{this GitHub repo}.
+\end{itemize}
+
+
+
+\end{document}

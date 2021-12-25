@@ -1,0 +1,47 @@
+---
+graphics: yes
+name: Thiago
+surname: Cerqueira-Silva
+headcolor: 414141
+#qualifications: 
+position: "M.D./Ph.D. Student"
+address: "Av. Reitor Miguel Calmon, S/N - Vale do Canela, Salvador-Bahia"
+phone: "+55 71-99124-7896"
+orcid: 0000-0003-4534-2509
+email: "csilvathiago@hotmail.com"
+#twitter: 
+#github: 
+#linkedin: 
+aboutme: |
+  I am an M.D./Ph.D. student, with experience in bioinformatics, biostatistics, and epidemiology. My primary research interests are study design and data analysis.
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+nocite: "@*"
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhead[R]{\thepage}
+knit: bookdown::render_book
+#given-name-pattern: Thiago
+#family-name-pattern: Cerqueira-Silva
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+pacman::p_load(tidyverse,lubridate,vitae,googlesheets4,glue,ezpickr,knitr, fuzzyjoin)
+
+#Load data
+edu <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Education")
+courses <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Courses") %>%  arrange(type,desc(year)) 
+scholarship <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Scholarships") %>%  arrange(desc(endYear)) 
+bookchapter <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Book_chapters") %>%  arrange(desc(year))
+presentation <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Presentation") %>%  arrange(desc(year)) %>% filter(filter=="TRUE")
+selected_pub <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "selected_pub") #file in google sheets with publication relavence order
+ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "ext") #file in google sheets with publication relavence order
+
+#Load publication data
+publications <- rorcid::orcid_works(orcid="0000-0003-4534-2509")$`0000-0003-4534-2509`$works
+
+
+```
+

@@ -1,0 +1,9 @@
+\faIcon{laptop-code} Courses
+==================================
+
+```{r courses}
+detailed_entries(courses, 
+                 when = year,
+                 where = where,
+                 with = course)
+```

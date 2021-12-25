@@ -1,0 +1,9 @@
+\faIcon{comments} Works presented in Congress
+==================================
+```{r talk}
+brief_entries(presentation,
+              when=year,
+              what=title,
+              with=congress)
+
+```
