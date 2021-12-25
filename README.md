@@ -11,7 +11,7 @@ Some differences:
 
 
 Minor improvements
-- Some comments about LaTeX formatation
+- Some comments about LaTeX formatation (awesome-cv.cls)
 
 Small documentation about LaTeX fonts https://tug.org/FontCatalogue/latinmodernmono/
 
