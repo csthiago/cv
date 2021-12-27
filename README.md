@@ -1,7 +1,7 @@
 
 # Thiago Cerqueira Silva's Academic CV
 
-My CV created with [vitae package](https://github.com/mitchelloharawild/vitae/), much of the content were based in the version from [JooYoung](https://github.com/jooyoungseo/jy_CV).
+My CV created with [vitae package](https://github.com/mitchelloharawild/vitae/), based mostly on the version from [JooYoung](https://github.com/jooyoungseo/jy_CV).
 
 Some differences:
 
