@@ -8,4 +8,4 @@ vitae::awesomecv:
 #  includes:
 #    in_header: a11y.tex
   pandoc_args:
-    - --lua-filter="lua/strong.lua"
+#    - --lua-filter="lua/strong.lua"

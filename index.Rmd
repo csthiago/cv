@@ -15,7 +15,6 @@ email: "csilvathiago@hotmail.com"
 aboutme: |
   I am an M.D./Ph.D. student, with experience in bioinformatics, biostatistics, and epidemiology. My primary research interests are study design and data analysis.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
-nocite: "@*"
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
@@ -27,8 +26,8 @@ knit: bookdown::render_book
 
 ```{r setup, include=FALSE, cache = FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-
-pacman::p_load(tidyverse,lubridate,vitae,googlesheets4,glue,ezpickr,knitr, fuzzyjoin)
+#remotes::install_github("ropensci/rcrossref") need install the dev version
+pacman::p_load(tidyverse,lubridate,vitae,googlesheets4,glue,ezpickr,knitr, fuzzyjoin,rcrossref)
 
 #Load data
 edu <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Education")
@@ -42,6 +41,15 @@ ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv
 #Load publication data
 publications <- rorcid::orcid_works(orcid="0000-0003-4534-2509")$`0000-0003-4534-2509`$works
 
+
+embolden_name <- function(string,
+                          name = "Cerqueira-Silva, T."){
+  str_replace_all(string = string,
+                  pattern = name,
+                  replacement = glue::glue("\\\\textbf{<name>}",
+                                           .open = "<",
+                                           .close = ">"))
+}
 
 ```
 
