@@ -6,7 +6,7 @@ My CV created with [vitae package](https://github.com/mitchelloharawild/vitae/),
 Some differences:
 
 - All data files are extracted from a googlesheets via [googlesheets4](https://googlesheets4.tidyverse.org/)
-- Publications are extracted from my ORCID profile
+- Publications are extracted from my ORCID profile and author names from rcrossref
 - Support to icons in the headers (adaptaded from [Lorena Abad](https://github.com/loreabad6/R-CV))
 
 
