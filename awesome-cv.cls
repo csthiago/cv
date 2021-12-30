@@ -205,10 +205,10 @@
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
 
 % For elements of detailed_entries
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\normalfont\color{black} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\normalfont\color{graytext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\scshape\color{graytext} #1}}  %date detail
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\normalfont\color{awesome} #1}}  %where entry in detailed_entries
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\normalfont\color{black} #1}}  %where entry in detailed_entries
 \newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
@@ -220,7 +220,7 @@
 
 % For elements of brief_entries
 \newcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{darktext} #1}}
 \newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\bfseries\color{awesome} #1}}
 
@@ -604,7 +604,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-  \vspace{-1.0mm}
+  \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -614,6 +614,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
+  \vspace{0.5cm} %
 }
 
 % Define an environment for cvsubentry

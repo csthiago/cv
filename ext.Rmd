@@ -6,7 +6,8 @@
 ```{r ext}
 detailed_entries(ext, 
                  when = glue("{startYear}/{endYear}"),
-                 what = what,
+                 with = what,
                  why = detail)
+
 ```
 

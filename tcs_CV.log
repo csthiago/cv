@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.19)  28 DEC 2021 00:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.29)  30 DEC 2021 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,75 +769,20 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 136.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 142.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 142.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 142.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 142.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 142.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 142.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sc' will be
 (Font)              scaled to size 8.0pt on input line 142.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 152.
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 152--186
-   [] 
- []
-
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 150.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -845,76 +790,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+(Font)              scaled to size 8.0pt on input line 163.
 [1
 
 ]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 190.
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 197--208
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 215--219
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 215--219
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 215--219
-   [] 
- []
-
+(Font)              scaled to size 10.95pt on input line 167.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -923,19 +805,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 226--229
-   [] 
- []
-
-
-Overfull \hbox (2.92001pt too wide) in paragraph at lines 226--229
-   [] 
- []
-
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 236.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 236.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -943,17 +812,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3] (./tcs_CV.aux)
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4] (./tcs_CV.aux)
 Package rerunfilecheck Info: File `tcs_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32473 strings out of 478256
- 663569 string characters out of 5854210
- 1145147 words of memory out of 5000000
- 52454 multiletter control sequences out of 15000+600000
- 407778 words of font info for 116 fonts, out of 8000000 for 9000
+ 32467 strings out of 478256
+ 663189 string characters out of 5854459
+ 1139153 words of memory out of 5000000
+ 52453 multiletter control sequences out of 15000+600000
+ 407754 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  114i,11n,118p,544b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tcs_CV.pdf (3 pages).
+Output written on tcs_CV.pdf (4 pages).

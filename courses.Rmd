@@ -2,8 +2,10 @@
 ==================================
 
 ```{r courses}
+
 detailed_entries(courses, 
                  when = year,
-                 where = where,
+                 what = where,
                  with = course)
+
 ```

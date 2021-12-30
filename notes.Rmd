@@ -1,5 +1,5 @@
 # Notes
 
-* For more detailed curriculum vitae, please visit my [Lattes](http://lattes.cnpq.br/8074214277248039)
+* For a more detailed curriculum vitae, please visit my [Lattes](http://lattes.cnpq.br/8074214277248039)
 * This CV is reproducible; all the source code behind this CV is available on [this GitHub repo](https://github.com/csthiago/cv){target="_blank"}.
 
