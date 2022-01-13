@@ -1,0 +1,9 @@
+\faIcon{comments} Apresentações em congressos
+==================================
+```{r talk}
+detailed_entries(presentation, 
+                 when = year,
+                 what = congress,
+                 with = title)
+
+```

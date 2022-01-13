@@ -1,7 +1,7 @@
 ---
 graphics: yes
 name: Thiago
-surname: Cerqueira-Silva
+surname: Cerqueira Silva
 headcolor: 414141
 #qualifications: 
 position: "M.D./Ph.D. Student"
@@ -42,13 +42,12 @@ ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv
 publications <- rorcid::orcid_works(orcid="0000-0003-4534-2509")$`0000-0003-4534-2509`$works
 
 
-embolden_name <- function(string,
-                          name = "Cerqueira-Silva, T."){
-  str_replace_all(string = string,
-                  pattern = name,
-                  replacement = glue::glue("\\\\textbf{<name>}",
+embolden_name <- function(string){str_replace_all(string,c("Cerqueira-Silva, T."=glue::glue("\\\\textbf{Cerqueira-Silva, T.}",
                                            .open = "<",
-                                           .close = ">"))
+                                           .close = ">"),
+                                 "Silva, T. C."=glue::glue("\\\\textbf{Silva, T. C.}",
+                                           .open = "<",
+                                           .close = ">")))
 }
 
 ```

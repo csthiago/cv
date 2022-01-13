@@ -1,0 +1,9 @@
+\faIcon{book} Capítulos de livros
+==================================
+
+```{r bookchapters}
+detailed_entries(bookchapter, 
+                 when = year,
+                 what = book,
+                 with = title)
+```

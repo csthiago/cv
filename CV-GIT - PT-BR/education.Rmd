@@ -1,0 +1,11 @@
+\faIcon{university} Formação acadêmica
+==================================
+
+```{r education}
+detailed_entries(edu, 
+                 when = glue("{startYear}--{endYear}"),
+                 what = degree,
+                 where = dept,
+                 with = where,
+                 why = c(detail,detail2))
+```

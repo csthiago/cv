@@ -1,0 +1,11 @@
+#vitae::moderncv:
+#  theme: classic
+vitae::awesomecv:
+  fig_caption: yes
+  keep_tex: yes
+#  keep_md: yes
+#  citation_package: "default"
+#  includes:
+#    in_header: a11y.tex
+  pandoc_args:
+#    - --lua-filter="lua/strong.lua"

@@ -1,0 +1,9 @@
+\faIcon{comments} Resumos publicados em anais de congressos
+==================================
+```{r congressos}
+detailed_entries(congressos, 
+                 when = year,
+                 what = congress,
+                 with = title)
+
+```

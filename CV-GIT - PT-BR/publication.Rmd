@@ -1,4 +1,4 @@
-\faIcon{newspaper} Publications
+\faIcon{newspaper} Artigos Publicados
 ==================================
 
 ```{r}
@@ -13,4 +13,3 @@ publications %>%filter(type=="journal-article") %>%
   mutate(nomes=str_replace(nomes,fixed("&"),fixed("\\&")),`journal-title.value`=str_replace(`journal-title.value`,fixed("&"),fixed("\\&")))%>% mutate(nomes=embolden_name(nomes)) %>%   detailed_entries(with=`title.title.value`, where = `journal-title.value`, when = `publication-date.year.value`, what=nomes, .protect =F)
 ```
 
-For the most updated list of publications see [*my Google Scholar profile*](https://scholar.google.com/citations?user=UbyXhckAAAAJ&hl=en).
