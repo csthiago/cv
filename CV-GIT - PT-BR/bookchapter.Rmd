@@ -7,3 +7,4 @@ detailed_entries(bookchapter,
                  what = book,
                  with = title)
 ```
+

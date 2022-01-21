@@ -1,0 +1,12 @@
+\faIcon{user-edit} Monitoria
+==================================
+
+```{r monitoria}
+detailed_entries(monitoria, 
+                 when = glue("{startYear}/{endYear}"),
+                 where= where,
+                 with = what,
+                 what = detail)
+
+```
+

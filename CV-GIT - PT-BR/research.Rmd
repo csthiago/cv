@@ -1,0 +1,14 @@
+\faIcon{microscope} Experiência em Pesquisa
+==================================
+
+
+```{r research}
+detailed_entries(research, 
+                 when = glue("{startYear}-{endYear}"),
+                 where=where,
+                 with = what,
+                 what = detail)
+
+```
+
+\newpage

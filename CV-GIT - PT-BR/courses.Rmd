@@ -9,3 +9,5 @@ detailed_entries(courses,
                  with = course)
 
 ```
+
+\newpage

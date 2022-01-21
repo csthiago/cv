@@ -13,7 +13,7 @@ email: "csilvathiago@hotmail.com"
 #github: 
 #linkedin: 
 aboutme: |
-  Estudante de Medicina da FMB-UFBA e de doutorado do Pós Graduação em Ciências da Saúde (Programa Pesquisador em Medicina). Pesquisador em formação, com experiência na área de epidemiologia, bioestátistica e bioinformática. Tenho bastante interesse em métodos quantitativos e reprodutibilidade. Meu trabalho está na interface entre ciência de dados e a parte aplicada de Medicina, incorporando conhecimentos da prática clínica para melhorar o desenho e interpretação de estudos científicos. Durante a graduação participei na elaboração e condução de diversos trabalhos científicos, incluindo artigos na área de doença de Chagas, Chikungunya e COVID-19
+  Estudante de Medicina da Faculdade de Medicina da Bahia-UFBA e doutorando do Programa de Pós Graduação em Ciências da Saúde (Programa Pesquisador em Medicina). Experiência em trabalhos na área de epidemiologia, bioestatística e bioinformática. Meus principais interesses  no campo acadêmico são métodos quantitativos, epidemiologia e reprodutibilidade. Durante minha formação busquei obter conhecimentos que me permitissem atuar na interface entre ciência de dados e Medicina, utilizando os conhecimentos da prática clínica para um melhor desenvolvimento de desenho de estudos, aplicação de métodos estatísticos e interpretação de resultados. Durante a graduação participei na elaboração e condução de diversos trabalhos científicos, incluindo artigos na área de doença de Chagas, Chikungunya e COVID-19
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 header-includes:
   - \usepackage{fancyhdr}
@@ -37,8 +37,10 @@ bookchapter <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d
 presentation <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "Presentation") %>%  arrange(desc(year)) %>% filter(filter=="TRUE")
 congressos <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "resumos_cong") %>%  arrange(desc(year)) %>% filter(filter=="TRUE")
 selected_pub <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "selected_pub") #file in google sheets with publication relavence order
-ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "ext") #file in google sheets with publication relavence order
-acc <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "accept_pub") #file in google sheets with publication relavence order
+ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "ext") #file in 
+acc <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "accept_pub") 
+research <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "research") 
+monitoria <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "monitoria") 
 
 #Load publication data
 publications <- rorcid::orcid_works(orcid="0000-0003-4534-2509")$`0000-0003-4534-2509`$works
