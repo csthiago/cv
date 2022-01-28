@@ -2,15 +2,25 @@
 ==================================
 
 ```{r}
-publications %>%filter(type=="journal-article") %>% 
+publications %>%
+  filter(type == "journal-article") %>%
   mutate(doi_clean = str_replace_all(url.value, "[^[:alnum:]]", "")) %>%
   regex_left_join(selected_pub %>% mutate(DOI = str_replace_all(DOI, "[^[:alnum:]]", "")), by = c("doi_clean" = "DOI"), ignore_case = T) %>%
   mutate(order = if_else(is.na(order), max(order, na.rm = T) + 1, order)) %>%
   mutate(doi_work = str_extract(url.value, "(?<=doi.org/).*")) %>%
-  mutate(nomes = cr_cn(dois = doi_work, format = "text", style = "apa-cv")) %>%
+  mutate(nomes = cr_cn(dois = doi_work, format = "text", style = "apa-cv", raw = T)) %>%
   mutate(nomes = str_extract(nomes, ".*(?=\\([:digit:]{4}\\))")) %>%
-  arrange(order, desc(`publication-date.year.value`)) %>% 
-  mutate(nomes=str_replace(nomes,fixed("&"),fixed("\\&")),`journal-title.value`=str_replace(`journal-title.value`,fixed("&"),fixed("\\&")))%>% mutate(nomes=embolden_name(nomes)) %>%   detailed_entries(with=`title.title.value`, where = `journal-title.value`, when = `publication-date.year.value`, what=nomes, .protect =F)
+  mutate(nomes = stringi::stri_trans_general(nomes, "Latin-ASCII")) %>%
+  arrange(order, desc(`publication-date.year.value`)) %>%
+  mutate(nomes = str_replace(nomes, fixed("&"), fixed("\\&")), `journal-title.value` = str_replace(`journal-title.value`, fixed("&"), fixed("\\&"))) %>%
+  mutate(nomes = embolden_name(nomes)) %>%
+  mutate(nomes = case_when(
+    cofirst == "Yes" ~ str_replace(nomes, fixed("}"), fixed("*}")),
+    TRUE ~ nomes
+  )) %>%
+  detailed_entries(with = `title.title.value`, where = `journal-title.value`, when = `publication-date.year.value`, what = nomes, .protect = F)
 ```
+
+\* co-first author  
 
 For the most updated list of publications see [*my Google Scholar profile*](https://scholar.google.com/citations?user=UbyXhckAAAAJ&hl=en).

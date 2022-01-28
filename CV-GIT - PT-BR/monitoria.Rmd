@@ -1,4 +1,4 @@
-\faIcon{user-edit} Monitoria
+\faIcon{chalkboard-teacher} Monitoria
 ==================================
 
 ```{r monitoria}

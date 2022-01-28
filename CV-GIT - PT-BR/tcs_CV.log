@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.17)  20 JAN 2022 22:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.17)  21 JAN 2022 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,10 +824,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
-File: sig/Assinatura_2.png Graphic file (type bmp)
-<sig/Assinatura_2.png>
+File: sig/sig.png Graphic file (type bmp)
+<sig/sig.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
@@ -843,10 +843,10 @@ Package rerunfilecheck Info: File `tcs_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32502 strings out of 478173
- 664331 string characters out of 5852466
- 1138406 words of memory out of 5000000
- 52559 multiletter control sequences out of 15000+600000
+ 32505 strings out of 478173
+ 664310 string characters out of 5852466
+ 1138430 words of memory out of 5000000
+ 52560 multiletter control sequences out of 15000+600000
  473575 words of font info for 113 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  114i,11n,118p,544b,674s stack positions out of 5000i,500n,10000p,200000b,80000s

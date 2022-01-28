@@ -1,0 +1,11 @@
+\faIcon{newspaper} Accepted articles
+==================================
+
+```{r Pub_Acc}
+
+acc%>% mutate(congress=embolden_name(congress)) %>% detailed_entries(when = year,
+                 what = congress,
+                 where= where,
+                 with = title, .protect = F)
+
+```

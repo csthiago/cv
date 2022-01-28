@@ -41,6 +41,7 @@ ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhP
 acc <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "accept_pub") 
 research <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "research") 
 monitoria <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "monitoria") 
+rev <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "rev") 
 
 #Load publication data
 publications <- rorcid::orcid_works(orcid="0000-0003-4534-2509")$`0000-0003-4534-2509`$works

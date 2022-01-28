@@ -13,7 +13,7 @@ email: "csilvathiago@hotmail.com"
 #github: 
 #linkedin: 
 aboutme: |
-  I am an M.D./Ph.D. student, with experience in bioinformatics, biostatistics, and epidemiology. My primary research interests are study design and data analysis.
+  I am a Medical student at the Faculty of Medicine of Bahia-UFBA and a doctoral student in the Postgraduate Program in Health Sciences. I have experience in works related to epidemiology, biostatistics, and bioinformatics. My main academic interests are quantitative methods, epidemiology, and reproducibility. During my training, I sought to obtain knowledge that would allow me to act at the interface between data science and Medicine, using the knowledge of clinical practice for better development of study design, application of statistical methods, and interpretation of results. I have collaborated in the conception and analysis of several scientific works, including articles in Chagas disease, Chikungunya, and COVID-19.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 header-includes:
   - \usepackage{fancyhdr}
@@ -37,6 +37,7 @@ bookchapter <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d
 presentation <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "Presentation") %>%  arrange(desc(year)) %>% filter(filter=="TRUE")
 selected_pub <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "selected_pub") #file in google sheets with publication relavence order
 ext <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SMZKNv8BK7r-o720I-gsbT4w5ng2jqqoWXiYpnPRSYY/edit?usp=sharing",sheet = "ext") #file in google sheets with publication relavence order
+acc <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Wb8KhPZJHw8mf7wU3KBye5Q6GZSOI0DLR6UU946gweQ/edit?usp=sharing",sheet = "accept_pub") 
 
 #Load publication data
 publications <- rorcid::orcid_works(orcid="0000-0003-4534-2509")$`0000-0003-4534-2509`$works

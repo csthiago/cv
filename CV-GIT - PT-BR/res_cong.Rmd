@@ -1,4 +1,4 @@
-\faIcon{comments} Resumos publicados em anais de congressos
+\faIcon{file-alt} Resumos publicados em anais de congressos
 ==================================
 ```{r congressos}
 detailed_entries(congressos, 

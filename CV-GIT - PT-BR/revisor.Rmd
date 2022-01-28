@@ -1,0 +1,11 @@
+\faIcon{user-edit} Revisor de Periódico
+==================================
+
+```{r revisor}
+detailed_entries(rev, 
+                 when = when,
+                 where= where,
+                 with = what)
+
+```
+

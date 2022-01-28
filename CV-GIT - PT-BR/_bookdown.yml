@@ -6,6 +6,7 @@ rmd_files:
   - "accepted.Rmd"
   - "preprint.Rmd"
   - "research.Rmd"
+  - "revisor.Rmd"
   - "scholarship.Rmd"
   - "courses.Rmd"
   - "monitoria.Rmd"
